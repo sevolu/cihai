@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class='page_b {{isIphoneX ?"he80":""}} {{isHUAWEI ?"hw":""}}'>
+
+  <view class='deng_all'>
+    <view class='list' wx:for="{{deng_data}}" wx:key="unique" id="{{index}}" bindtap='clickList'>
+      <view class='list_img'>
+        <image src='{{item.imgurl}}'></image>
+      </view>
+      <view class='list_p'>
+        {{item.title}}
+      </view>
+      <view class='list_text'>
+         已供 {{item.count_day}} 天
+      </view>
+    </view>
+  </view>
+
+  <view class='navbox {{isIphoneX ?"fix-iphonex-button":""}}'>
+    <navigator url="/pages/index/index" open-type="redirect">1</navigator>
+    <navigator url="/pages/gdg/gdg" open-type="redirect">2</navigator>
+    <navigator url="/pages/gdb/gdb" open-type="redirect">3</navigator>
+    <navigator url="/pages/about/about" open-type="redirect">4</navigator>
+  </view>
+
+  <view class='activity_window_box {{showTip}}'>
+    <view class='activity_window'>
+      <view class='dialog'>
+        <view class='dialog-t'>阿弥陀佛，您已供{{tip_data.title}} {{tip_data.count_day}}天。还望您坚持每日供灯。</view>
+        <view class='dialog-b' bindtap='hiddenTip'>好的</view>
+        <view class='close_box' bindtap='hiddenTip'>X</view>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,25 @@
+<!--pages/about/about.wxml-->
+<view class='page_e {{isIphoneX ?"he80":""}} {{isHUAWEI ?"hw":""}}'>
+  <view class='gdgd-box-all'>
+    <scroll-view class='gdgd-box' scroll-y>
+      <view class='h1'>供灯功德</view>
+      <view class='p'><text>一、照世如灯</text> 供灯者生生世世如同世间的明灯，转生为人也是人中之王，慧灯照亮整个世界。</view>
+      <view class='p'><text>二、肉眼不坏得</text> 供灯者肉眼非常明亮，不会变成盲人，也不会成近视眼。</view>
+      <view class='p'><text>三、得于天眼</text> 供灯者将来会获得五眼中的天眼。</view>
+      <view class='p'><text>四、善恶智能</text> 能辨别善法和恶法，懂得一切因果取舍。</view>
+      <view class='p'><text>五、灭除大暗</text> 具有超胜的智慧，能灭除自他相续中的一切愚痴黑暗。</view>
+      <view class='p'><text>六、得智能明</text> 自己的智慧超群众人，不受外界的各种诱惑，有辨别取舍的能力。</view>
+      <view class='p'><text>七、不在暗处</text> 生生世世不会转生在邪见或者黑暗的地方，住于光明的殊胜之地。</view>
+      <view class='p'><text>八、具大福报</text> 转生为具有大福报的众生。</view>
+      <view class='p'><text>九、命终生天</text> 命终后不会堕入恶趣，而会转生天界。其他经典中也说，长期供灯的人不会生于恶趣，而是上生天趣，即使投生人间，也生于高贵种族的家庭中，不会生在具邪见者的家里。</view>
+      <view class='p'><text>十、速证涅槃</text> 很快的时间中能证得圣者的果位。</view>
+      <view class='p'>每一个众生在无始的轮回中，都曾与我们互为父母、子女、手足、亲眷，只因彼此业缘不同，今朝我幸而为人，彼不幸沦为畜生，放生就是救拔我们累圠以来的亲友眷属，使其重拾生机，安享天年！ </view>
+    </scroll-view>
+  </view>
+  <view class='navbox {{isIphoneX ?"fix-iphonex-button":""}}'>
+    <navigator url="/pages/index/index" open-type="redirect">1</navigator>
+    <navigator url="/pages/gdg/gdg" open-type="redirect">2</navigator>
+    <navigator url="/pages/gdb/gdb" open-type="redirect">3</navigator>
+    <navigator url="/pages/about/about" open-type="redirect">4</navigator>
+  </view>
+</view>

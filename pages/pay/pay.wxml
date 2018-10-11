@@ -1,0 +1,38 @@
+<!--pages/pay/pay.wxml-->
+<view class='pay_all'>
+  <view class='pay'>
+    <view class='pay_t'>
+      <image src='{{avatarUrl}}'></image>
+    </view>
+    <view class='pay_title'>
+      <view class='h1'>感恩随喜</view>
+      <view class='p'>随喜赞叹，功德无量</view>
+    </view>
+    <view class='pay_c'>
+      <view class='pay_money_list'>
+        <view class='pay_money' wx:for='{{money_list}}' wx:key='' id='{{item}}' bindtap='payMoney'><text>{{item}}</text>元</view>
+      </view>
+    </view>
+    <view class='pay_b'>
+       <view class='other_money' bindtap='showTip'>其他金额</view>
+    </view>
+    <view class='pay_e'>赞赏是为表示鼓励而对平台的无偿赠与</view>
+  </view>
+</view>
+
+
+<view class='modal {{popZhe}}'>
+  <view class="modal-mask"></view>
+    <view class='popPage1' style='top:{{top}}%'>
+      <view class='popPage1-title'>
+        其他金额 <text bindtap='hiddenTop'>X</text>
+      </view>
+      <view class='popPage1-c'>
+      <view class='shu'>
+        <view class='jin'>金额(元)</view><input type='digit' placeholder='可填写1-999999' focus="{{focus}}" bindfocus='inputFocus' bindblur='inputBlur' bindinput='otherMoney'></input>
+        </view>
+
+      <view class='pay-btn' bindtap='otherPayMoney'>赞赏</view>
+    </view>
+  </view>
+</view>

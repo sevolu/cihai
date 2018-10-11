@@ -1,0 +1,100 @@
+/* pages/Lnbound/Lnbound.wxss */
+
+.page_h{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 100%;
+  height:100vh;
+  background: url('http://a.lttgd.top/gongdeng/back2.jpg') no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  /* justify-content: center; */
+}
+
+.cont-all{
+  width: 662rpx;
+  height: 712rpx;
+  background: url('http://a.lttgd.top/gongdeng/backBg.png') no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-top: 38rpx;
+  box-sizing: border-box;
+  padding: 50rpx 60rpx;
+  position: relative;
+}
+
+.contA{
+  font-size: 38rpx;
+  color: #d67419;
+  line-height: 50rpx;
+  height: 522rpx;
+}
+.contA view{
+  margin-bottom: 20rpx;
+}
+.contA input{
+  width: 300rpx;
+  display: inline-block;
+  border-bottom: 1px solid #9b5a32;
+  vertical-align: middle;
+}
+
+.contA input:nth-child(1){ width: 310rpx;}
+
+.contB-all{ 
+  width: 100%; 
+  height: 70rpx; 
+  position: absolute;
+  left: 0;
+  bottom: 50rpx;
+  text-align: center;
+  font-size: 0;
+}
+.contB-all .contB-l{ 
+  width:246rpx;
+  height:68rpx;
+   background: url('http://a.lttgd.top/gongdeng/811636985131228042_03.png') no-repeat;
+  background-size: 100% 100%; 
+  /* background: #d67419; */
+  display: inline-block;
+  margin-right: 20rpx;
+  /* border-radius: 15rpx; */
+}
+.contB-all .contB-r{ 
+  width:246rpx;
+  height:68rpx;
+   background: url('http://a.lttgd.top/gongdeng/644281210330383396_03.png') no-repeat;
+  background-size: 100% 100%; 
+  /* background: #d67419; */
+  display: inline-block;
+  margin-left: 20rpx;
+  /* border-radius: 15rpx; */
+}
+
+.cont-all .contC{ 
+  width: 400rpx; 
+  height: 70rpx; 
+  background: url('http://a.lttgd.top/gongdeng/backJoy.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:53rpx;
+  left:130rpx;
+}
+
+.shuomin{ color: #fff; margin: 0 45rpx; margin-top: 40rpx;}
+
+.shuomin_h1{font-size: 40rpx;margin-bottom: 20rpx; }
+.shuomin_p{ font-size: 30rpx;}
+
+.hidden{ display: none;}
+
+.fengxiang{
+   background: url('http://a.lttgd.top/gongdeng/backTan.png') no-repeat #000;
+   background-size: 100% 100%;
+   position: absolute; 
+   top:0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+}

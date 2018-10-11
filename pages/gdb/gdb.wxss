@@ -1,0 +1,163 @@
+/* page{ background-color: #ac7f56;} */
+page{
+  background: #2d1306;
+}
+.page_c{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height:100vh;
+   background: url('http://a.lttgd.top/gongdeng/gdb_bg.jpg') no-repeat; 
+  background-size: 100% 100%;
+  position: relative;
+
+}
+
+.navbox navigator:nth-child(3){
+  background: url('http://a.lttgd.top/gongdeng/bot_3.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+
+.head-a{
+  height: 50rpx;
+    line-height:50rpx;
+    padding-top:143rpx;
+    font-size: 34rpx;
+    font-weight: normal;
+    color: #860808;
+    width: 100%;
+    text-align: center;
+}
+.head-b{
+  height: 50rpx;
+    line-height:50rpx;
+    padding-top:47rpx;
+    font-size: 34rpx;
+    font-weight: bold;
+    color: #a46e3b;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24rpx;
+}
+.head-b text{
+  color: #c83c3c;
+}
+
+.listbox_all{
+    width: 650rpx;
+    height: 508rpx;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 0rpx;
+    margin-bottom:124rpx;
+}
+
+.listbox{}
+
+.listbox .list{
+  font-size: 26rpx;
+    color: #4d230d;
+    padding: 21rpx 0;
+}
+.listbox .list text{
+    color: #902f00;
+}
+
+.btn{ width: 100%; display: flex; flex-direction: row; justify-content: center; font-size: 0; padding-top: 10rpx;}
+.btn-l{ 
+  width:274rpx;
+height:92rpx;
+  text-align: center;
+  background: url('http://a.lttgd.top/gongdeng/gz_btn2.png') no-repeat;
+  background-size: 100% 100%;
+   font-size: 0;
+   margin-right: 24rpx;
+}
+.btn-r{ 
+  width:274rpx;
+height:92rpx;
+  text-align: center;
+  background: url('http://a.lttgd.top/gongdeng/jl_btn2.png') no-repeat;
+  background-size: 100% 100%;
+   font-size: 0;
+    margin-left: 24rpx;
+  }
+
+
+.activity_window_box {
+    position: fixed;
+    display: table;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.4);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+     /* display: none;  */
+}
+
+.activity_window_box:target {
+    opacity: 1;
+    pointer-events: auto
+}
+.activity_window_box .activity_window {
+    width: 100%;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    opacity: 1;
+        margin: 0 auto;
+}
+
+.activity_window_box .dialog {
+    width: 630rpx;
+    margin: auto;
+    position: relative;
+    border-radius:20rpx;
+    background: #f5e8d8;
+    border-bottom: 1px solid #999
+}
+.activity_window_box .dialog .dialog-t{
+  text-align: left;
+    
+    margin: 0 38rpx;
+    padding-top:20rpx;
+    padding-bottom:20rpx;
+  font-size: 30rpx;
+  color: #333;
+   line-height: 48rpx;
+}
+.activity_window_box .dialog .dialog-b{
+    color: #ea9527;
+    font-size:30rpx;
+    font-weight: bold;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding:14rpx 0;
+}
+
+
+.showTable{
+  display: table;
+}
+.hidden{ display: none; }
+
+.dialog-t .h3{color: #bf070b;}
+.dialog-t .p{}
+.dialog-t .p.red{color: #bf070b;}
+.dialog-t .p.red text{ background: rgb(255, 255, 0);}
+
+.hw .head-b{
+  padding-top:22rpx;
+}
+.hw .listbox_all{
+  height: 468rpx;
+}

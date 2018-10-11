@@ -1,0 +1,36 @@
+<!--pages/lightOn/lightOn.wxml-->
+
+
+<view class='page_g {{isIphoneX ?"he80":""}} {{isHUAWEI ?"hw":""}}'>
+  <view class='lightSnuff'>
+     <image src='{{curDeng.imgurl}}'></image>
+  </view>
+  <view class='lightName'>
+      {{curDeng.title}} {{curDeng.price == 0 ? '免费':curDeng.price}}
+  </view>
+
+  <view class='explain-all'>
+    <view class='explain'>
+      <view class='explain-t'>{{curDeng.content.crosshead}}</view>
+      <view class='explain-b'>
+        <view>{{curDeng.content.explain}}</view>
+        <view>{{curDeng.content.apply}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='btn_dd' bindtap='wantToDD'></view>
+
+  <view class='dengBtn-list-all'>
+    <view class='dengBtn-list'>
+      <view class='dengBtn {{curindex == index?"cur":""}}' id="{{index}}" wx:for='{{deng_data}}' wx:key='' bindtap='btnClick'>{{item.title}}</view>
+    </view>
+  </view>
+
+  <view class='navbox {{isIphoneX ?"fix-iphonex-button":""}}'>
+    <navigator url="/pages/index/index" open-type="redirect">1</navigator>
+    <navigator url="/pages/gdg/gdg" open-type="redirect">2</navigator>
+    <navigator url="/pages/gdb/gdb" open-type="redirect">3</navigator>
+    <navigator url="/pages/about/about" open-type="redirect">4</navigator>
+  </view>
+</view>

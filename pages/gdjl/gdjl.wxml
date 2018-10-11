@@ -1,0 +1,31 @@
+<!--pages/gdjl/gdjl.wxml-->
+<view class='page_d {{isIphoneX ?"he80":""}} {{isHUAWEI ?"hw":""}}'>
+  
+  <view class='body'>
+    <view class='daoshu'>
+      倒计时 <text>{{daoTime.leftHours}}:{{daoTime.leftMinutes}}:{{daoTime.leftSeconds}}</text>  即可再次供灯
+    </view>
+    <view class='h1'>目前连续供灯 <text>{{count_date}}</text>天</view>
+    <view class='h3'>温馨提示：佛堂供灯系统每天只能供灯三次</view>
+    <view class='h5'><text>{{userName}}</text>，您于</view>
+    <view class='record-all'>
+        <view class='record'>
+            <view class='record-list' wx:for="{{time_record}}" wx:key="unique">
+              <text>{{item[0]}}</text>
+              <text>{{item[1]}}</text>
+              <text>{{item[2]}}</text>
+            </view>
+        </view>
+    </view>
+  </view>
+
+  <view class='navbox  {{isIphoneX ?"fix-iphonex-button":""}}'>
+    <navigator url="/pages/index/index" open-type="redirect">1</navigator>
+    <navigator url="/pages/gdg/gdg" open-type="redirect">2</navigator>
+    <navigator url="/pages/gdb/gdb" open-type="redirect">3</navigator>
+    <navigator url="/pages/about/about" open-type="redirect">4</navigator>
+  </view>
+  
+  
+
+</view>

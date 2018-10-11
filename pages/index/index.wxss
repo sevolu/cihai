@@ -1,0 +1,389 @@
+/**index.wxss**/
+.official{
+  width:100%;
+  height: 90rpx;
+  position: fixed;
+  bottom: 100rpx;
+  left: 0rpx;
+  z-index: 99;
+}
+page{
+  background: #2d1306;
+}
+.page_a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height:100vh;
+  background: url('http://a.lttgd.top/gongdeng/indexBg.jpg') no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  top:-68rpx;
+}
+
+.page_a .lightSnuff {
+  /*width:343rpx;
+  height:414rpx;*/
+width:45.6%;
+height:37.7%;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  /*padding-top: 40rpx;
+  margin-top:335rpx;*/
+  padding-top:5.5%;
+  margin-top:44%;
+}
+
+.page_a .lightSnuff.cur {
+    background: url('http://a.lttgd.top/gongdeng/lampHuan.png') no-repeat;
+    background-size: 100% 104%;
+}
+
+.page_a .lightSnuff image{
+/*width:343rpx;
+height:414rpx;*/
+width:100%;
+height:100%;
+}
+
+
+
+.page_a .lightBtn{
+  /* margin-top: 180rpx;*/
+  margin-top:24%;
+   }
+.page_a .lightBtn button{ 
+  width: 262rpx;
+  height: 100rpx;
+background: url('http://a.lttgd.top/gongdeng/lightBtn.png') no-repeat;
+background-size: 100% 100%;
+-webkit-animation: lightBtn 1s infinite;
+    animation: lightBtn 1s infinite
+}
+
+@-webkit-keyframes lightBtn {
+    0% {
+        background: url('http://a.lttgd.top/gongdeng/lightBtn.png') no-repeat;
+background-size: 100% 100%;
+    }
+
+    100% {
+        background: url('http://a.lttgd.top/gongdeng/lightBtn-on.png') no-repeat;
+background-size: 100% 100%;
+    }
+}
+
+@keyframes lightBtn {
+    0% {
+        background: url('http://a.lttgd.top/gongdeng/lightBtn.png') no-repeat;
+background-size: 100% 100%;
+    }
+
+    100% {
+        background: url('http://a.lttgd.top/gongdeng/lightBtn-on.png') no-repeat;
+background-size: 100% 100%;
+    }
+}
+
+
+.navbox navigator:nth-child(1){
+  background: url('http://a.lttgd.top/gongdeng/bot_1.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+
+.music {
+    z-index: 9999;
+    position: absolute;
+    top:54rpx;
+right:80rpx;
+width:44rpx;
+height:44rpx;
+    background: url('http://a.lttgd.top/gongdeng/music.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.music.running {
+    -webkit-animation: music 2s infinite linear;
+    animation: music 2s infinite linear
+}
+
+@-webkit-keyframes music {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes music {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.musicSmall {
+    position: absolute;
+    -webkit-animation: musicOne 3.5s infinite linear;
+    animation: musicOne 3.5s infinite linear;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+width:12rpx;
+height:12rpx;
+    background: url('http://a.lttgd.top/gongdeng/music1.png') no-repeat;
+    background-size: 100% 100%;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg)
+}
+
+.musicS1 {
+    top:34rpx;
+right:80rpx;
+
+}
+
+.musicS2 {
+    top:50rpx;
+right:61rpx;
+}
+
+.musicS3 {
+    top:73rpx;
+right:56rpx;
+}
+
+@-webkit-keyframes musicOne {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(160deg);
+        transform: rotate(160deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(190deg);
+        transform: rotate(190deg)
+    }
+}
+
+@keyframes musicOne {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(160deg);
+        transform: rotate(160deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(190deg);
+        transform: rotate(190deg)
+    }
+}
+
+
+
+.page_f{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url('http://a.lttgd.top/gongdeng/lamp1.jpg') no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  top: -68rpx;
+}
+
+
+.page_f .lightSnuff {
+    width:226rpx;
+height:252.5rpx;
+margin:0 auto;
+text-align:center;
+box-sizing:border-box;
+padding-top:27rpx;
+margin-top:96rpx;
+
+}
+
+.page_f .lightSnuff.cur {
+    background: url('http://a.lttgd.top/gongdeng/lampHuan.png') no-repeat;
+    background-size: 100% 100%;
+    -webkit-animation: lightSnuffcur 0.8s infinite;
+    animation: lightSnuffcur 0.8s infinite
+}
+
+@-webkit-keyframes lightSnuffcur {
+    0% {
+        background: url('http://a.lttgd.top/gongdeng/lampHuan.png') no-repeat;
+background-size: 100% 100%;
+    }
+
+    100% {
+        background: url('http://a.lttgd.top/gongdeng/lampHuan-on.png') no-repeat;
+background-size: 100% 100%;
+    }
+}
+@keyframes lightSnuffcur {
+    0% {
+        background: url('http://a.lttgd.top/gongdeng/lampHuan.png') no-repeat;
+background-size: 100% 100%;
+    }
+
+    100% {
+        background: url('http://a.lttgd.top/gongdeng/lampHuan-on.png') no-repeat;
+background-size: 100% 100%;
+    }
+}
+.page_f .lightSnuff image{
+ width: 176.5rpx;
+ height: 192rpx;
+}
+
+.page_f .fo_img{
+width: 100%;
+text-align: center;
+}
+.page_f .fo_img image{
+width:586rpx;
+height:642rpx;
+}
+
+.page_f .hua_img{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+   margin-top:-157rpx; 
+}
+.page_f image{ vertical-align: bottom;}
+.page_f .hua_img image{
+  width:113rpx;
+  height:144rpx;
+}
+.page_f .hua_img-l{margin-right: 110rpx; width:123rpx;
+  height:144rpx;}
+.page_f .hua_img-r{margin-left: 110rpx;width:123rpx;
+  height:144rpx;}
+
+.page_f .lazhu_img{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+   margin-top:-114rpx; 
+}
+.page_f .lazhu_img-l{
+  margin-right:60rpx; 
+  width:58rpx;
+height:148rpx;
+
+  background: url('http://a.lttgd.top/gongdeng/candle-on.png') no-repeat;
+    background-size: 100% 100%;
+    -webkit-animation: lazhuimg 1s infinite;
+    animation: lazhuimg 1s infinite
+  }
+.page_f .lazhu_img-r{
+  margin-left: 60rpx;
+  width:58rpx;
+height:148rpx;
+
+  background: url('http://a.lttgd.top/gongdeng/candle-on.png') no-repeat;
+    background-size: 100% 100%;
+    -webkit-animation: lazhuimg 1s infinite;
+    animation: lazhuimg 1s infinite
+  }  
+@-webkit-keyframes lazhuimg {
+    0% {
+        background: url('http://a.lttgd.top/gongdeng/candle.png') no-repeat;
+background-size: 100% 100%;
+    }
+
+    100% {
+        background: url('http://a.lttgd.top/gongdeng/candle-on.png') no-repeat;
+background-size: 100% 100%;
+    }
+}
+@keyframes lazhuimg {
+    0% {
+        background: url('http://a.lttgd.top/gongdeng/candle.png') no-repeat;
+background-size: 100% 100%;
+    }
+
+    100% {
+        background: url('http://a.lttgd.top/gongdeng/candle-on.png') no-repeat;
+background-size: 100% 100%;
+    }
+}
+.xianglu_img{ margin-top: -97rpx; position: relative;}
+.xianglu_img image{ width:126rpx;
+height:137rpx;
+
+}
+
+.lightName{ font-size: 30rpx; color: #fff; margin-top: -14rpx;}
+
+.page_f .lightBtn{ position: absolute;top:719rpx;
+left:245rpx;}
+.page_f .lightBtn button{ 
+  width: 262rpx;
+  height: 100rpx;
+background: url('http://a.lttgd.top/gongdeng/lightBtn.png') no-repeat;
+background-size: 100% 100%;
+-webkit-animation: lightBtn 1s infinite;
+    animation: lightBtn 1s infinite
+}
+
+
+
+
+
+
+.show{ display: block;}
+.hidden{ display: none;}
+
+.page_a.hw .lightSnuff {
+  margin-top:40%;
+}
+
+.page_f.hw .fo_img image{
+  height:590rpx;
+}
+.page_f.hw .lightSnuff{
+  margin-top:74rpx;
+}
+.page_f.hw .lightBtn{
+  top:642rpx;
+}
+
+.xianglu_img_bg{ 
+  position: absolute;
+  top:-30rpx;
+  left:10rpx;
+}
+.xianglu_img_bg image{
+  width: 100rpx;
+}
+
+
+
+

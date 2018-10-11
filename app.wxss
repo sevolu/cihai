@@ -1,0 +1,35 @@
+/**app.wxss**/
+
+.navbox{
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+  display: flex;
+  flex-direction: row;
+  background: url('http://www.gzhss.net/addons/norait_gongfo/style/gongdeng2/bottom.jpg') no-repeat;
+  background-size: 100% 100%;
+  height: 100rpx;
+    }
+
+.navbox navigator{ width: 25%;height: 100rpx; font-size: 0;}
+
+
+.fix-iphonex-button {
+    /* bottom:119rpx!important; */
+    bottom:68rpx!important;
+}
+.fix-iphonex-button::after {
+    content: ' ';
+    position: fixed;
+    bottom: 0!important;
+    /* height: 119rpx!important; */
+    height: 68rpx!important;
+    width: 100%;
+    background: #fff;
+}
+
+.he80{
+  height: 83vh!important;
+}

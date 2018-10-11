@@ -1,0 +1,161 @@
+/* pages/pay/pay.wxss */
+
+.pay_t{ width: 100%;
+height: 150rpx;
+background: #d75847;
+border-bottom-left-radius: 50%;
+border-bottom-right-radius: 50%;
+position: relative;
+}
+.pay_t image{ 
+  width: 110rpx; 
+height: 110rpx;
+ border-radius: 100%;
+ overflow: hidden;
+ position: absolute;
+ bottom: -55rpx;
+ left: 50%; 
+ margin-left: -55rpx;
+ border: 1px solid #fff;
+ background: #fff;
+}
+.pay_title{ width: 100%;}
+.pay_title .h1{ 
+  text-align: center; 
+  font-size:48rpx;
+  padding-top:114rpx;
+  line-height: 48rpx;
+  color: #000;
+}
+.pay_title .p{
+  text-align: center; 
+  font-size:28rpx;
+  padding-top:14rpx;
+  line-height: 48rpx;
+  color: #8c8c8c;
+}
+
+.pay_money_list{
+  text-align: center;
+}
+
+.pay_c{ padding-top: 100rpx;}
+
+.pay_money{
+  display: inline-block;
+ width:178rpx;
+height:90rpx;
+  border: 4rpx solid #d75644;
+  border-radius: 10rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color:#d75644;
+  margin: 18rpx 10rpx;
+
+}
+.pay_money text{ font-size: 44rpx; margin-right: 4rpx;}
+
+.pay_b{ text-align: center;
+font-size: 34rpx;
+  color:#7a93b4;
+  padding-top: 50rpx;
+  }
+
+.pay_all{ height: 100vh; position: relative;}
+
+.pay_e{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 50rpx;
+  font-size:28rpx;
+  color: #999999;
+}
+
+
+
+.show{
+display: block; 
+}
+.hidden{
+display: none;
+}
+.modal-mask {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #000;
+opacity: .5;
+z-index: 100;
+} 
+.popPage1{
+width: 620rpx;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+background: #fff;
+border-radius: 12rpx;
+z-index: 101;
+}
+
+.popPage1-title{
+height: 90rpx;
+line-height: 90rpx;
+text-align: center;
+font-size: 32rpx;
+color: #000;
+border-bottom: 2rpx solid #e2e1e1;
+position: relative;
+font-weight: bold;
+}
+.popPage1-title text{
+position: absolute;
+left: 0%;
+color: #e2e1e1;
+font-size: 40rpx;
+font-weight: initial;
+padding:0 30rpx;
+
+}
+.popPage1-c{
+margin: 40rpx 30rpx 30rpx 30rpx;
+}
+.shu{
+border: 1px solid #e2e1e1;
+height: 90rpx;
+line-height: 90rpx;
+}
+.shu .jin{
+display: inline-block;
+font-size: 32rpx;
+color: #000;
+height: 90rpx;
+line-height: 90rpx;
+float: left;
+margin-left: 20rpx;
+margin-right: 20rpx;
+}
+.shu input{
+display: inline-block;
+width: 320rpx;
+font-size: 32rpx;
+height: 90rpx;
+line-height: 90rpx;
+float: left;
+}
+.pay-btn{
+height: 90rpx;
+line-height: 90rpx;
+text-align: center;
+background: #04be02;
+color: #fff;
+border-radius: 12rpx;
+font-size: 32rpx;
+margin-top: 40rpx;
+}
+
+

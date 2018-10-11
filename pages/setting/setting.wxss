@@ -1,0 +1,15 @@
+/* pages/userinfo/index.wxss */
+.padding-border{
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  overflow: hidden;
+}
+
+view{
+  margin-top: 50rpx;
+  text-align: center;
+  margin-bottom: 50rpx;
+}
+button{
+  margin-bottom: 50rpx;
+}

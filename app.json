@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/pay/pay",
+    "pages/lightOn/lightOn",
+    "pages/about/about",
+    "pages/gdjl/gdjl",
+    "pages/gdb/gdb",
+    "pages/Lnbound/Lnbound",
+    "pages/gdg/gdg",
+    "pages/setting/setting"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "供灯",
+    "navigationBarTextStyle": "#fff",
+    "disableScroll": true
+  }
+}

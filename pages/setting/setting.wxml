@@ -1,0 +1,7 @@
+<!--pages/userinfo/index.wxml-->
+<view class="padding-border" >
+<view>使用小程序将获取您的公开信息</view>
+<button type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+同意授权
+</button>
+</view>

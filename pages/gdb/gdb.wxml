@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class='page_c  {{isIphoneX ?"he80":""}} {{isHUAWEI ?"hw":""}}'>
+  
+  <view class='head-a'>
+    已连续供灯 {{gd_date}} 天
+  </view>
+  <view class='head-b'>
+    <text>{{userName}}</text> {{ifshangbang}}
+  </view>
+  
+  <view class='listbox_all'>
+     <view class='listbox' style='transform: translateY({{zTransform}}px);'> 
+      <view class='list' wx:for="{{listbox}}" wx:key="unique">随喜赞叹 <text>{{item}}</text> 登上供灯榜</view>
+      <view class='list' wx:for="{{listbox}}" wx:key="unique">随喜赞叹 <text>{{item}}</text> 登上供灯榜</view>
+     </view>
+  </view>
+
+  <view class='btn'>
+    <view class='btn-l' bindtap='showTipfn'>2</view>
+    <view class='btn-r' bindtap='gdjlpage'>3</view>
+  </view>
+   
+  <view class='activity_window_box {{showTip}}'>
+    <view class='activity_window'>
+      <view class='dialog'>
+        <view class='dialog-t'>
+          <view class='h3'> 善友吉祥！</view>
+          <view class='p'>【我的礼佛堂】在线供灯，每天可供灯三盏，发菩提心，贵在心诚！</view>
+          <view class='p'>随喜赞叹参与“供灯榜”</view>
+          <view class='p red'><text>连续7天可荣登供灯榜，【我的礼佛堂】将不定期举行线下供灯活动，</text></view>
+          <view class='p'>请坚持每日供灯，</view>
+          <view class='p'>供灯就是延寿，供灯就是改命，供灯就是消灾，供灯就是积福，功德无量！阿弥陀佛！</view>
+        </view>
+        <view class='dialog-b' bindtap='hiddenTip'>好的</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='navbox {{isIphoneX ?"fix-iphonex-button":""}}'>
+    <navigator url="/pages/index/index" open-type="redirect">1</navigator>
+    <navigator url="/pages/gdg/gdg" open-type="redirect">2</navigator>
+    <navigator url="/pages/gdb/gdb" open-type="redirect">3</navigator>
+    <navigator url="/pages/about/about" open-type="redirect">4</navigator>
+  </view>
+
+  
+
+
+</view>

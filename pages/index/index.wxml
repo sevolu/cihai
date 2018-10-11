@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<view class='page_a {{isIphoneX ?"he80":""}} {{isHUAWEI ?"hw":""}}' wx:if="{{!yiDian}}">
+  <view class='lightSnuff'>
+     <image src='{{notLogin.imgurl.deFault}}'></image> 
+  </view>
+  <view class='lightBtn'>
+    <button type="default" bindtap='startDiandeng'></button>
+  </view>
+</view>
+
+<view class='page_f {{isIphoneX ?"he80":""}} {{isHUAWEI ?"hw":""}}' wx:else>
+  <view class='fo_img'>
+    <image src='{{curDengData.foxiang}}'></image>
+  </view>
+  <view class='hua_img'>
+    <view class='hua_img-l'><image src='{{loginOn.hua_img[0]}}'></image></view>
+    <view class='hua_img-r'><image src='{{loginOn.hua_img[0]}}'></image></view>
+  </view>
+  <view class='lazhu_img'>
+    <view class='lazhu_img-l'></view>
+    <view class='lazhu_img-r'></view>
+  </view>
+  <view class='xianglu_img'>
+      <view class='xianglu_img_bg'>
+        <image src='http://a.lttgd.top/gongfo/xianglu_xiang0.gif'></image>
+      </view>
+      <image src='{{loginOn.xianglu_img[0]}}'></image>  
+  </view>
+  <view class='lightSnuff cur'>
+     <image src='{{curDengData.imgurl}}'></image> 
+  </view>
+  <view class='lightName'>
+      {{curDengData.title}}
+  </view>
+ <view class='lightBtn' bindtap='startDiandeng' wx:if="{{ddNumber<3}}">
+  <!-- <view class='lightBtn' bindtap='startDiandeng'> -->
+      <button type="default"  ></button>
+  </view>
+</view>
+
+
+<view class='navbox {{isIphoneX ?"fix-iphonex-button":""}}'>
+    <navigator url="/pages/index/index" open-type="redirect">1</navigator>
+    <navigator url="/pages/gdg/gdg" open-type="redirect">2</navigator>
+    <navigator url="/pages/gdb/gdb" open-type="redirect">3</navigator>
+    <navigator url="/pages/about/about" open-type="redirect">4</navigator>
+</view>
+
+<view class='music {{music.running}}'  bindtap="audioPlay">
+    <audio src="{{music.src}}" id="myAudio" loop></audio>
+</view>
+<view class='musicSmall musicS1' wx:if='{{music.running}}'></view>
+<view class='musicSmall musicS2' wx:if='{{music.running}}'></view>
+<view class='musicSmall musicS3' wx:if='{{music.running}}'></view>
+<view class='official'>
+<official-account binderror='off' bindload='off'></official-account>
+</view>
+<loading hidden="{{switchoverLoading}}">正在加载</loading> 
