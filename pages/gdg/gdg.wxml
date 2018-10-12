@@ -10,12 +10,10 @@
         {{item.title}}
       </view>
       <view class='list_text'>
-         已供 {{item.count_day}} 天
+        已供 {{item.count_day}} 天
       </view>
     </view>
-    <view class='official'>
-      <official-account></official-account>
-    </view>
+
   </view>
 
   <view class='navbox {{isIphoneX ?"fix-iphonex-button":""}}'>
@@ -35,4 +33,7 @@
     </view>
   </view>
 
+</view>
+<view class='official'>
+  <official-account></official-account>
 </view>
