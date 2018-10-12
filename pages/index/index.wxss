@@ -1,14 +1,14 @@
 /**index.wxss**/
 .official{
   width:100%;
-  height: 90rpx;
-  position: fixed;
-  bottom: 100rpx;
-  left: 0rpx;
-  z-index: 99;
+  height: 100rpx;
+  margin-top: 15rpx;
+  border:1rpx solid red;
 }
 page{
   background: #2d1306;
+  overflow-y: auto!important;
+  margin-bottom: 150rpx;
 }
 .page_a{
   display: flex;
@@ -19,7 +19,6 @@ page{
   background: url('http://a.lttgd.top/gongdeng/indexBg.jpg') no-repeat;
   background-size: 100% 100%;
   position: relative;
-  top:-68rpx;
 }
 
 .page_a .lightSnuff {
@@ -204,11 +203,10 @@ right:56rpx;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: cale( 100vh -100rpx );
   background: url('http://a.lttgd.top/gongdeng/lamp1.jpg') no-repeat;
   background-size: 100% 100%;
   position: relative;
-  top: -68rpx;
 }
 
 
