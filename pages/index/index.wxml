@@ -33,9 +33,9 @@
   <view class='lightSnuff cur'>
     <image src='{{curDengData.imgurl}}'></image>
   </view>
-  <view class='lightName'>
+  <!-- <view class='lightName'>
     {{curDengData.title}}
-  </view>
+  </view> -->
   <view class='lightBtn' bindtap='startDiandeng' wx:if="{{ddNumber<3}}">
     <!-- <view class='lightBtn' bindtap='startDiandeng'> -->
     <button type="default"></button>

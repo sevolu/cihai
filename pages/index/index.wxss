@@ -1,12 +1,12 @@
 /**index.wxss**/
 .official{
   width:100%;
-  margin-top: 35rpx;
+  position: fixed;
+  bottom: 100rpx;
+  left:0rpx;
 }
 page{
   background: #2d1306;
-  overflow-y: auto!important;
-  margin-bottom: 250rpx;
 }
 .page_a{
   display: flex;
@@ -201,10 +201,11 @@ right:56rpx;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: cale( 100vh -100rpx );
+  height: cale( 100vh -500rpx );
   background: url('http://a.lttgd.top/gongdeng/lamp1.jpg') no-repeat;
   background-size: 100% 100%;
   position: relative;
+  top:-66rpx;
 }
 
 
