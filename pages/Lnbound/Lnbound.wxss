@@ -1,5 +1,12 @@
 /* pages/Lnbound/Lnbound.wxss */
-
+.official{
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
 .page_h{
   display: flex;
   flex-direction: column;
@@ -82,7 +89,7 @@
   left:130rpx;
 }
 
-.shuomin{ color: #fff; margin: 0 45rpx; margin-top: 40rpx;}
+.shuomin{ color: #fff; margin: 0 45rpx; margin-top: 20rpx;}
 
 .shuomin_h1{font-size: 40rpx;margin-bottom: 20rpx; }
 .shuomin_p{ font-size: 30rpx;}

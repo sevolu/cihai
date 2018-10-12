@@ -24,8 +24,10 @@
   </view>
   <!-- <navigator class='fengxiang' url="/pages/index/index" open-type="redirect" wx:if="{{fengX}}"></navigator> -->
   <view class='shuomin'>
-    <view class='shuomin_h1'>扩展知识：为什么要回向</view>
     <view class='shuomin_p'>念佛，放生，抄经，所做的一切行善积德的事情都会有“功德”。将自家所修的功德“回”转归“向”亲朋好友法界众生，不管他们是否学佛，都能结缘佛法，蒙佛加特。“回向”更是修持菩提心最重要的一门功夫。</view>
+  </view>
+  <view class='official'>
+      <official-account></official-account>
   </view>
 </view>
 

@@ -30,12 +30,19 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
-					"id": -1,
-					"name": "扫码场景编译",
+					"id": 0,
+					"name": "扫码场景编译index",
 					"pathName": "pages/index/index",
+					"query": "",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "扫码场景编译Lnbound",
+					"pathName": "pages/Lnbound/Lnbound",
 					"query": "",
 					"scene": "1011"
 				}

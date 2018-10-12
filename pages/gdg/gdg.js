@@ -63,12 +63,6 @@ Page({
         imgurl: 'http://a.lttgd.top/gongdeng/deng9.png',
         title: '姻缘灯',
         count_day: 0
-      },
-      {
-        id: 10,
-        imgurl: 'http://a.lttgd.top/gongdeng/deng10.png',
-        title: '生辰灯',
-        count_day: 0
       }
     ],
     tip_data: {

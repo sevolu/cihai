@@ -6,9 +6,9 @@
     "pages/about/about",
     "pages/gdjl/gdjl",
     "pages/gdb/gdb",
-    "pages/Lnbound/Lnbound",
     "pages/gdg/gdg",
-    "pages/setting/setting"
+    "pages/setting/setting",
+    "pages/Lnbound/Lnbound"
   ],
   "window": {
     "backgroundTextStyle": "light",
