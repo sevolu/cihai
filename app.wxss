@@ -44,7 +44,18 @@
   z-index: 99;
 }
 .contact button{
-  color: #fdf5c1;
+  color: #eeb74e;
   background: initial;
   font-size: 36rpx;
+  -webkit-animation:textAanimation 2s infinite;
+  animation:textAanimation 2s infinite;
+}
+@keyframes textAanimation {
+    0% {
+       opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
 }
