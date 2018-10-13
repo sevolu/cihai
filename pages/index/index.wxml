@@ -57,6 +57,9 @@
 <view class='musicSmall musicS2' wx:if='{{music.running}}'></view>
 <view class='musicSmall musicS3' wx:if='{{music.running}}'></view>
 <loading hidden="{{switchoverLoading}}">正在加载</loading>
-<view class='official'>
+<!-- <view class='official'>
   <official-account binderror='off' bindload='off'></official-account>
+</view> -->
+<view class='contact'>
+    <button open-type="contact" >点击进入回复“共修”，结缘香囊</button>
 </view>

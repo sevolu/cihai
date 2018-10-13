@@ -2,10 +2,16 @@
 <view class='page_h'>
   <view class='cont-all' wx:if="{{showHx}}">
     <view class='contA'>
-      <view>善信弟子： <input type='text' bindinput="nameInput" value='{{userName}}'></input></view>
+      <view>善信弟子：
+        <input type='text' bindinput="nameInput" value='{{userName}}'></input>
+      </view>
       <view>诚心愿以此功德普及于一切，我等与众生，皆共成佛道</view>
-      <view>特别回向给：<input type='text' bindinput="tbhxInput"></input></view>
-      <view>愿他（她）：<input type='text' bindinput="ytInput"></input></view>
+      <view>特别回向给：
+        <input type='text' bindinput="tbhxInput"></input>
+      </view>
+      <view>愿他（她）：
+        <input type='text' bindinput="ytInput"></input>
+      </view>
     </view>
     <view class='contB-all'>
       <view class='contB-l' bindtap='submitLY'></view>
@@ -14,10 +20,16 @@
   </view>
   <view class='cont-all' wx:else>
     <view class='contA'>
-      <view>善信弟子： <text>{{name_input}}</text></view>
+      <view>善信弟子：
+        <text>{{name_input}}</text>
+      </view>
       <view>诚心愿以此功德普及于一切，我等与众生，皆共成佛道</view>
-      <view>特别回向给：<text>{{tbhx_input}}</text></view>
-      <view>愿他（她）：<text>{{yt_input}}</text></view>
+      <view>特别回向给：
+        <text>{{tbhx_input}}</text>
+      </view>
+      <view>愿他（她）：
+        <text>{{yt_input}}</text>
+      </view>
     </view>
     <!-- <view class='contC' bindtap='shareZx'></view> -->
     <button class='contC' open-type='share' bindtap='shareZx'></button>
@@ -26,8 +38,10 @@
   <view class='shuomin'>
     <view class='shuomin_p'>念佛，放生，抄经，所做的一切行善积德的事情都会有“功德”。将自家所修的功德“回”转归“向”亲朋好友法界众生，不管他们是否学佛，都能结缘佛法，蒙佛加特。“回向”更是修持菩提心最重要的一门功夫。</view>
   </view>
-  <view class='official'>
+  <!-- <view class='official'>
       <official-account></official-account>
+  </view> -->
+  <view class='contact'>
+    <button open-type="contact">点击进入回复“共修”，结缘香囊</button>
   </view>
 </view>
-

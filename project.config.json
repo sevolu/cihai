@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": 0,
@@ -45,6 +45,13 @@
 					"pathName": "pages/Lnbound/Lnbound",
 					"query": "",
 					"scene": "1011"
+				},
+				{
+					"id": 2,
+					"name": "1089",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": "1047"
 				}
 			]
 		}
