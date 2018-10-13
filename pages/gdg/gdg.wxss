@@ -1,4 +1,10 @@
 page{ background-color: #ac7f56;}
+.official{
+  width:100%;
+  position: fixed;
+  bottom: 100rpx;
+  left:0rpx;
+}
 .page_b{
   display: flex;
   flex-direction: column;

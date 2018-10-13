@@ -38,4 +38,10 @@
     </view>
   </view>
 
+<<<<<<< HEAD
+=======
+</view>
+<view class='official'>
+  <official-account></official-account>
+>>>>>>> 90a9692e475a46fdfc102efa02639770d67cf2ed
 </view>
