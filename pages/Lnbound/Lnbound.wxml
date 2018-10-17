@@ -32,7 +32,9 @@
       </view>
     </view>
     <!-- <view class='contC' bindtap='shareZx'></view> -->
-    <button class='contC' open-type='share' bindtap='shareZx'></button>
+    <view bindtap='bingTrack'  data-page='供灯' data-event='共沾法喜'>
+      <button class='contC' open-type='share' bindtap='shareZx'></button>
+    </view>
   </view>
   <!-- <navigator class='fengxiang' url="/pages/index/index" open-type="redirect" wx:if="{{fengX}}"></navigator> -->
   <view class='shuomin'>
@@ -41,7 +43,7 @@
   <!-- <view class='official'>
       <official-account></official-account>
   </view> -->
-  <view class='contact'>
+  <view class='contact' bindtap='bingTrack'  data-page='供灯' data-event='进入客服'>
     <button open-type="contact">点击进入回复“共修”，结缘香囊</button>
   </view>
 </view>

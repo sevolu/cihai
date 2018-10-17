@@ -16,7 +16,7 @@
     <!-- <view class='official'>
       <official-account></official-account>
     </view> -->
-    <view class='contact'>
+    <view class='contact'  bindtap='bingTrack'  data-page='供灯阁' data-event='进入客服'>
       <button open-type="contact">点击进入回复“共修”，结缘香囊</button>
     </view>
   </view>

@@ -1,5 +1,10 @@
 //app.js
-
+require('demo/zhuge')
+var config = {
+  debug: true,
+  pv: true,
+};
+App.zhuge.load('95673613eb62454087ee20c4c1bc4099', config);
 App({
   globalData: {
     Url: 'https://a.lttgd.top/free/lamp/',
@@ -77,7 +82,7 @@ App({
               },
               success: function (res) {
                 if (res.data.result_code == 0) {
-                  _this.globalData.userId = res.data.userId;
+                  _this.globalData.userId = 1;
                   if(fn){fn();}
                 }
               }
@@ -89,5 +94,5 @@ App({
   },
   onShow: function (options){
     console.log('场景' + options.scene);
-  }
+  },
 })

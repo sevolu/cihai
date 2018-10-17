@@ -1,7 +1,7 @@
 {
 	"description": "项目配置文件。",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -30,13 +30,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 0,
 			"list": [
 				{
 					"id": 0,
 					"name": "扫码场景编译index",
 					"pathName": "pages/index/index",
-					"query": "",
+					"query": "source=1",
 					"scene": "1011"
 				},
 				{

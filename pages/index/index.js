@@ -56,15 +56,19 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
+  onLoad: function (e) {
     var _this = this;
+    
+    App.zhuge.track('用户来源', {
+      source: e.source,
+      userId:app.globalData.userId
+    });
   },
   off:function (detail){
     console.log(detail)
   },
   getPage:function(){
     var _this = this;
-    //console.log(app.globalData.userId);
     if (app.globalData.indexData.yiDian) {
       _this.setData({
         switchoverLoading: true,
@@ -88,7 +92,16 @@ Page({
   onReady: function (e) {
     this.getPage();
   },
-
+  bingTrack: function (e) {
+    var event = e.currentTarget.dataset.event;
+    var page = e.currentTarget.dataset.page;
+    App.zhuge.track(event, {
+      event: page
+    });
+    App.zhuge.identify(app.globalData.userId, {
+      event: page
+    });
+  },
   /**
    * 生命周期函数--监听页面显示
    */
@@ -143,8 +156,8 @@ Page({
       this.setData(this.data);
     }
   },
-  startDiandeng:function(){
-    
+  startDiandeng:function(e){
+    this.bingTrack(e);
     if (app.globalData.userId){
       wx.redirectTo({
         url: '../lightOn/lightOn',

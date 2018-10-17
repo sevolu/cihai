@@ -4,7 +4,7 @@
     <image src='{{notLogin.imgurl.deFault}}'></image>
   </view>
   <view class='lightBtn'>
-    <button type="default" bindtap='startDiandeng'></button>
+    <button type="default" bindtap='startDiandeng' data-page='首页' data-event='开始点灯'></button>
   </view>
 </view>
 
@@ -31,7 +31,7 @@
     <image src='{{loginOn.xianglu_img[0]}}'></image>
   </view>
   <view class='lightSnuff cur'>
-    <image src='{{curDengData.imgurl}}'></image>
+    <image src='{{curDengData.imgurl}}' mode='widthFix'></image>
   </view>
   <!-- <view class='lightName'>
     {{curDengData.title}}
@@ -60,6 +60,6 @@
 <!-- <view class='official'>
   <official-account binderror='off' bindload='off'></official-account>
 </view> -->
-<view class='contact'>
+<view class='contact' bindtap='bingTrack' data-page='首页' data-event='进入客服'>
     <button open-type="contact" >点击进入回复“共修”，结缘香囊</button>
 </view>

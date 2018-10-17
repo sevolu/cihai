@@ -72,7 +72,16 @@ Page({
     },
     showTip: 'hidden'
   },
-
+  bingTrack: function (e) {
+    var event = e.currentTarget.dataset.event;
+    var page = e.currentTarget.dataset.page;
+    App.zhuge.track(event, {
+      event: page
+    });
+    App.zhuge.identify(app.globalData.userId, {
+      event: page
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
